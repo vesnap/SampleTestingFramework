@@ -20,6 +20,7 @@ public class Inventory {
         }
 
         public String getProductLabel() {
+            System.out.println(browser.getText(PRODUCT_LABEL));
             return browser.getText(PRODUCT_LABEL);
         }
 
