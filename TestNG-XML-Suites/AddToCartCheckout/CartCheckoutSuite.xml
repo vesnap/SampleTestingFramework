@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "AddToCartAndCheckoutSuite">
+    <test name = "AddToCart">
+        <groups>
+            <run>
+                <include name = "valid" />
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.one.AddToCardTest"/>
+        </classes>
+    </test>
+    <test name = "RemoveFromCart">
+        <groups>
+            <run>
+                <include name = "remove" />
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.one.AddToCardTest"/>
+        </classes>
+    </test>
+</suite>
