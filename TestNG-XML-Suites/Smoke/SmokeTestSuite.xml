@@ -3,6 +3,23 @@
     <parameter name="username" value="standard_user"/>
     <parameter name="password" value="secret_sauce"/>
     <test name="functionality-test">
+        <groups>
+            <run>
+                <include name = "default" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.one.MainPageTest" />
+            <!--class name="com.one.AddToCardTest" /-->
+            <!--class name="com.one.NavigationTest" /-->
+        </classes>
+    </test>
+    <test name="sortbByPrice">
+        <groups>
+            <run>
+                <include name = "sortbByPrice" />
+            </run>
+        </groups>
         <classes>
             <class name="com.one.MainPageTest" />
             <!--class name="com.one.AddToCardTest" /-->
